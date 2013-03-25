@@ -27,10 +27,18 @@
     </head>
     <body id="stage" class="theme">
         <div class="app">
-            <h1>Barcode Scanner Example</h1>
+            <!-- Buttons -->
+			<h1>Barcode Scanner Example</h1>
             <a ontouchend="app.scan()" class="btn large">Scan</a>
             <a ontouchend="app.encode()" class="btn large">Encode</a>
             <a ontouchend="app.helloWorld()" class="btn large">Hello World</a>
+			
+			<!-- Login stuff -->
+			<form style="text-align: center;float: left;width: 100%;">
+				<input type="text" name="user" placeholder="Username"><br>
+				<input type="text" name="pass" placeholder="Passsword"><br>
+				<input type="submit" value="Login" id="submitButton">
+			</form>
         </div>
         <script type="text/javascript" src="cordova-2.1.0.js"></script>
         <script type="text/javascript" src="barcodescanner.js"></script>
