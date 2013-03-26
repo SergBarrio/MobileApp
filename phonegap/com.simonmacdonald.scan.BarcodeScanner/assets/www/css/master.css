@@ -155,3 +155,21 @@
   #stage.theme .numeric{
    width:100%;
   }
+  
+  /* Login Form */
+  div#formcenter{
+	vertical-align: middle;
+	display: table-cell;
+  }
+  form#login {
+	text-align: center;
+	width: 100%;
+  }
+  form#login > input{
+	font-size: 200%;
+  }
+  form#login > input[type="submit"]{
+	display: inline !important;
+	float: none !important;
+  }
+  

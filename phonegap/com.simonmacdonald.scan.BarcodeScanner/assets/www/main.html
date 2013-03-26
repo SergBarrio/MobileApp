@@ -23,15 +23,13 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/master.css" />
-        <title>Hello World</title>
+        <title>Welcome to FridgeRaider!</title>
     </head>
     <body id="stage" class="theme">
         <div class="app">
-            <!-- Buttons -->
-			<h1>Barcode Scanner Example</h1>
-            <a ontouchend="app.scan()" class="btn large">Scan</a>
-            <a ontouchend="app.encode()" class="btn large">Encode</a>
-            <a ontouchend="app.helloWorld()" class="btn large">Hello World</a>
+            <input type="text" name="ingredients" placeholder="Enter Ingredients...">
+			<input type="submit" class="btn" style="display:inline;float:none" value="Enter">
+			<img>Barcode</img>
         </div>
         <script type="text/javascript" src="cordova-2.1.0.js"></script>
         <script type="text/javascript" src="barcodescanner.js"></script>
