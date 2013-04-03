@@ -21,13 +21,28 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
         <link rel="stylesheet" type="text/css" href="css/master.css" />
-        <title>Hello World</title>
+        <title>Welcome to FridgeRaider!</title>
     </head>
-      
-    <body> hello world!hello world!hello world!hello world!hello world!hello world!hello world!
-    hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!
-    hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!
-    hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world! </body>
+    <body id="stage" class="theme">
+        <div class="app">
+			<div class="top-row">
+				<input id="ingredient-entry" type="text" name="ingredients" placeholder="Enter Ingredients...">
+				<input id="submit-button" type="submit" class="btn" value="Enter">
+				<input id="barcode-button" type="submit" value="|||||">
+			</div>
+			<div id="table-header"><h2>Your Ingredients</h2></div>
+			<div class="table">
+				
+			</div>
+			<input id="build-button" type="submit" class="btn" value="Build Recipes">
+        </div>
+        <script type="text/javascript" src="cordova-2.1.0.js"></script>
+        <script type="text/javascript" src="barcodescanner.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
 </html>
