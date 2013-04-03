@@ -208,12 +208,9 @@
   }
   
   /* Table CSS */
-  .1col{
-  
+  .table-wrapper{
+	color: #9ab;
   }
-  .2col{
-  
-  }
-  .3col{
-  
+  .pinned{
+	background: #444 !important;
   }
