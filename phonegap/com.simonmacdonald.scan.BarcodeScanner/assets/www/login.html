@@ -34,22 +34,15 @@
 			</form>
         </div>
 		<a href="main.html">Click here to see other stuff</a>
-        <script type="text/javascript" src="js/cordova-2.1.0.js"></script>
-        <script type="text/javascript" src="barcodescanner.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-		
-		<!-- Makes sure login field is centered -->
-		<script type="text/javascript">
-			document.addEventListener("deviceready", onDeviceReady, false);
-			function onDeviceReady() {
-				var center = $("#formcenter");
-				center.height( window.innerHeight - 20 );
-				center.width( window.innerWidth );
-			}
-        </script>
     </body>
+	<script type="text/javascript" src="js/cordova-2.1.0.js"></script>
+	<script type="text/javascript" src="barcodescanner.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/utils.js"></script>
+	<script type="text/javascript">
+		app.initialize();
+		document.addEventListener("deviceready", formcenter, false); //for phonegap
+		$(document).ready(formcenter); //for desktop
+	</script>
 </html>
